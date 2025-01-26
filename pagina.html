@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Quiromasaje</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-green-600 text-white py-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Centro de Quiromasaje</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#servicios" class="hover:underline">Servicios</a></li>
+                    <li><a href="#beneficios" class="hover:underline">Beneficios</a></li>
+                    <li><a href="#contacto" class="hover:underline">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center h-[500px] flex items-center justify-center" style="background-image: url('https://via.placeholder.com/1920x1080');">
+        <div class="bg-black bg-opacity-50 text-white text-center p-8 rounded-xl">
+            <h2 class="text-4xl font-bold mb-4">Relájate y renueva tu cuerpo</h2>
+            <p class="text-lg mb-6">Descubre los beneficios del quiromasaje para tu bienestar físico y emocional.</p>
+            <a href="#contacto" class="bg-green-500 hover:bg-green-700 text-white px-6 py-3 rounded-lg">Reserva tu cita</a>
+        </div>
+    </section>
+
+    <!-- Servicios Section -->
+    <section id="servicios" class="py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Nuestros Servicios</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <h3 class="text-xl font-semibold mb-4">Acupuntura y neurotaping</h3>
+                    <p class="text-gray-600">¡Equilibra tu energía! Alivia el dolor, reduce el estrés y mejora tu bienestar general con finas agujas colocadas en puntos clave de tu oreja.
+                        ¡Recupera tu movimiento! Este innovador tratamiento con cintas adhesivas ayuda a reducir el dolor, acelera la recuperación y mejora la movilidad de tus músculos y articulaciones.
+                    </p>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <h3 class="text-xl font-semibold mb-4">Osteopatia estructural, visceral y craneal</h3>
+                    <p class="text-gray-600">Alínea tus huesos, músculos y articulaciones para aliviar dolores y mejorar tu movilidad.
+                        Libera tensiones de tus órganos internos (estómago, hígado, etc.) para mejorar la digestión, circulación y energía, 
+                        Alivia dolores de cabeza, migrañas y estrés al liberar tensiones en el cráneo y mejorar tu bienestar mental y físico.</p>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <h3 class="text-xl font-semibold mb-4">Masaje especializado en Deportivo</h3>
+                    <p class="text-gray-600">Ideal para deportistas, mejora la recuperación y previene lesiones.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beneficios Section -->
+    <section id="beneficios" class="bg-gray-100 py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Beneficios del Quiromasaje</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="p-6">
+                    <img src="imagenes/quiromasaje1.jpeg" alt="Relajación" class="mx-auto mb-4">
+                    <h3 class="text-xl font-semibold">Relajación Profunda</h3>
+                    <p class="text-gray-600">Reduce el estrés y promueve la calma interior.</p>
+                </div>
+                <div class="p-6">
+                    <img src="imagenes/espalda.jpeg" alt="Flexibilidad" class="mx-auto mb-4">
+                    <h3 class="text-xl font-semibold">Mayor Flexibilidad</h3>
+                    <p class="text-gray-600">Mejora la elasticidad muscular y articular.</p>
+                </div>
+                <div class="p-6">
+                    <img src="imagenes/amai.jpeg" alt="Energía" class="mx-auto mb-4">
+                    <h3 class="text-xl font-semibold">Incremento de Energía</h3>
+                    <p class="text-gray-600">Recarga tu cuerpo con energía renovada.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="py-12">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-6">Contacto</h2>
+            <form class="max-w-lg mx-auto bg-white shadow-lg rounded-lg p-6">
+                <div class="mb-4">
+                    <label for="name" class="block text-sm font-medium text-gray-700">Nombre</label>
+                    <input type="text" id="name" class="w-full border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-medium text-gray-700">Correo Electrónico</label>
+                    <input type="email" id="email" class="w-full border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-sm font-medium text-gray-700">Mensaje</label>
+                    <textarea id="message" rows="4" class="w-full border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500"></textarea>
+                </div>
+                <button type="submit" class="bg-green-500 hover:bg-green-700 text-white px-6 py-3 rounded-lg">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-600 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Centro de Quiromasaje. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
